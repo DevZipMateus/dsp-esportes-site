@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Mail, Phone, MapPin, Clock } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Sobre */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-primary">DSP ESPORTES</h3>
+            <img src={logo} alt="DSP ESPORTES Logo" className="h-12 w-auto" />
             <p className="text-sm opacity-90">
               Mais que produtos, parceiros de treino
             </p>

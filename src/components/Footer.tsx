@@ -8,7 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Sobre */}
           <div className="space-y-4">
-            <img src={logo} alt="DSP ESPORTES Logo" className="h-12 w-auto" />
+            <div className="bg-white rounded-full w-fit p-2">
+              <img src={logo} alt="DSP ESPORTES Logo" className="h-12 w-auto" />
+            </div>
             <p className="text-sm opacity-90">
               Mais que produtos, parceiros de treino
             </p>

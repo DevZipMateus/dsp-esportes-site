@@ -18,19 +18,20 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-hero pt-20"
+      className="relative min-h-screen flex items-center justify-center bg-background pt-20"
     >
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background/80"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6 tracking-tight">
             DSP ESPORTES
           </h1>
-          <h2 className="text-2xl md:text-3xl text-primary-foreground/95 mb-8 font-light">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-8 font-light">
             Mais que produtos, parceiros de treino
           </h2>
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             Uniformes esportivos personalizados e artigos de qualidade há mais de 20 anos. 
             Atendimento especializado para atletas profissionais e amadores.
           </p>
@@ -59,7 +60,7 @@ const Hero = () => {
                   });
                 }
               }}
-              className="text-lg px-8 py-6 bg-background/10 border-2 border-primary-foreground/60 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="text-lg px-8 py-6"
             >
               Ver produtos
             </Button>

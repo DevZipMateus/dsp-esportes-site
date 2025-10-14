@@ -1,0 +1,73 @@
+import { Button } from "@/components/ui/button";
+import { MessageCircle } from "lucide-react";
+
+const Hero = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center bg-gradient-hero pt-20"
+    >
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070')] bg-cover bg-center opacity-20"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 tracking-tight">
+            DSP ESPORTES
+          </h1>
+          <h2 className="text-2xl md:text-3xl text-primary-foreground/95 mb-8 font-light">
+            Mais que produtos, parceiros de treino
+          </h2>
+          <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto">
+            Uniformes esportivos personalizados e artigos de qualidade há mais de 20 anos. 
+            Atendimento especializado para atletas profissionais e amadores.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              variant="hero"
+              size="lg"
+              onClick={scrollToContact}
+              className="text-lg px-8 py-6"
+            >
+              <MessageCircle className="mr-2" />
+              Entre em contato
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => {
+                const element = document.getElementById("products");
+                if (element) {
+                  const offset = 80;
+                  const elementPosition = element.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.pageYOffset - offset;
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+              className="text-lg px-8 py-6 bg-background/10 border-2 border-primary-foreground/60 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+            >
+              Ver produtos
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

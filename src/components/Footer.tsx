@@ -1,15 +1,13 @@
 import { Instagram, Facebook, Mail, Phone, MapPin, Clock } from "lucide-react";
 import logo from "@/assets/logo.png";
-
 const Footer = () => {
-  return (
-    <footer className="bg-accent text-accent-foreground py-12">
+  return <footer className="bg-accent text-accent-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Sobre */}
           <div className="space-y-4">
             <div className="bg-white rounded-full w-fit p-2">
-              <img src={logo} alt="DSP ESPORTES Logo" className="h-12 w-auto" />
+              <img src={logo} alt="DSP ESPORTES Logo" className="h-28 w-auto" />
             </div>
             <p className="text-sm opacity-90">
               Mais que produtos, parceiros de treino
@@ -23,19 +21,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-primary">Contato</h4>
             <div className="space-y-3 text-sm">
-              <a 
-                href="https://wa.me/5531989311832" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
+              <a href="https://wa.me/5531989311832" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
                 (31) 98931-1832
               </a>
-              <a 
-                href="mailto:dsp.vendas@hotmail.com"
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
+              <a href="mailto:dsp.vendas@hotmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Mail className="h-4 w-4" />
                 dsp.vendas@hotmail.com
               </a>
@@ -54,22 +44,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-primary">Redes sociais</h4>
             <div className="flex gap-4">
-              <a
-                href="https://instagram.com/dspesportes"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
-                aria-label="Instagram"
-              >
+              <a href="https://instagram.com/dspesportes" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Instagram">
                 <Instagram className="h-6 w-6" />
               </a>
-              <a
-                href="https://facebook.com/dspsports"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
-                aria-label="Facebook"
-              >
+              <a href="https://facebook.com/dspsports" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook className="h-6 w-6" />
               </a>
             </div>
@@ -81,8 +59,6 @@ const Footer = () => {
           <p className="mt-2">CNPJ: 57.394.111/0001-47</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

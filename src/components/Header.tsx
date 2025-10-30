@@ -35,6 +35,10 @@ const Header = () => {
     label: "Produtos",
     id: "products"
   }, {
+    label: "Catálogo",
+    id: "catalogo",
+    isLink: true
+  }, {
     label: "Contato",
     id: "contact"
   }];
@@ -50,7 +54,9 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            {menuItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-foreground hover:text-primary font-medium transition-colors">
+            {menuItems.map(item => item.isLink ? <a key={item.id} href={`/${item.id}`} className="text-foreground hover:text-primary font-medium transition-colors">
+                {item.label}
+              </a> : <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-foreground hover:text-primary font-medium transition-colors">
                 {item.label}
               </button>)}
             <Button variant="hero" onClick={() => scrollToSection("contact")} className="ml-4">
@@ -66,7 +72,9 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && <div className="md:hidden mt-4 py-4 bg-background border-t border-border animate-fade-in">
-            {menuItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="block w-full text-left py-3 text-foreground hover:text-primary font-medium transition-colors">
+            {menuItems.map(item => item.isLink ? <a key={item.id} href={`/${item.id}`} className="block w-full text-left py-3 text-foreground hover:text-primary font-medium transition-colors">
+                {item.label}
+              </a> : <button key={item.id} onClick={() => scrollToSection(item.id)} className="block w-full text-left py-3 text-foreground hover:text-primary font-medium transition-colors">
                 {item.label}
               </button>)}
             <Button variant="hero" onClick={() => scrollToSection("contact")} className="w-full mt-4">

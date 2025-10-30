@@ -40,12 +40,22 @@ const CamisetasPersonalizadas = () => {
                 key={camiseta.id}
                 className="bg-card rounded-lg shadow-elegant overflow-hidden hover:shadow-red transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="aspect-square bg-background flex items-center justify-center p-8">
+                <div className="bg-background flex items-center justify-center p-6" style={{ height: "280px" }}>
                   <img 
                     src={camiseta.src} 
                     alt={camiseta.alt}
                     className="w-full h-full object-contain"
                   />
+                </div>
+                <div className="p-4 text-center">
+                  <a 
+                    href="https://wa.me/553134234540"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary-hover font-medium transition-colors underline"
+                  >
+                    Mais informações, clique aqui
+                  </a>
                 </div>
               </div>
             ))}

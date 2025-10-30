@@ -34,6 +34,12 @@ import camiseta30 from "@/assets/camiseta-30.jpg";
 import camiseta31 from "@/assets/camiseta-31.jpg";
 import camiseta32 from "@/assets/camiseta-32.jpg";
 import camiseta33 from "@/assets/camiseta-33.jpg";
+import camiseta34 from "@/assets/camiseta-34.jpg";
+import camiseta35 from "@/assets/camiseta-35.jpg";
+import camiseta36 from "@/assets/camiseta-36.jpg";
+import camiseta37 from "@/assets/camiseta-37.jpg";
+import camiseta38 from "@/assets/camiseta-38.jpg";
+import camiseta39 from "@/assets/camiseta-39.jpg";
 
 const CamisetasPersonalizadas = () => {
   const camisetas = [
@@ -70,6 +76,12 @@ const CamisetasPersonalizadas = () => {
     { id: 31, src: camiseta31, alt: "Uniforme Esportivo Personalizado - Modelo 31" },
     { id: 32, src: camiseta32, alt: "Uniforme Esportivo Personalizado - Modelo 32" },
     { id: 33, src: camiseta33, alt: "Uniforme Esportivo Personalizado - Modelo 33" },
+    { id: 34, src: camiseta34, alt: "Uniforme Esportivo Personalizado - Modelo 34" },
+    { id: 35, src: camiseta35, alt: "Uniforme Esportivo Personalizado - Modelo 35" },
+    { id: 36, src: camiseta36, alt: "Uniforme Esportivo Personalizado - Modelo 36" },
+    { id: 37, src: camiseta37, alt: "Uniforme Esportivo Personalizado - Modelo 37" },
+    { id: 38, src: camiseta38, alt: "Uniforme Esportivo Personalizado - Modelo 38" },
+    { id: 39, src: camiseta39, alt: "Uniforme Esportivo Personalizado - Modelo 39" },
   ];
 
   return (

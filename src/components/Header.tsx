@@ -75,15 +75,26 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && <div className="md:hidden mt-4 py-4 bg-background border-t border-border animate-fade-in">
-            {menuItems.map(item => item.isLink ? <a key={item.id} href={`/${item.id}`} className="block w-full text-left py-3 text-foreground hover:text-primary font-medium transition-colors">
-                {item.label}
-              </a> : <button key={item.id} onClick={() => scrollToSection(item.id)} className="block w-full text-left py-3 text-foreground hover:text-primary font-medium transition-colors">
-                {item.label}
-              </button>)}
-            <Button variant="hero" onClick={() => scrollToSection("contact")} className="w-full mt-4">
-              Fale conosco
-            </Button>
+        {isMobileMenuOpen && <div className="md:hidden fixed inset-0 top-[96px] z-40">
+            {/* Overlay */}
+            <div 
+              className="absolute inset-0 bg-background/80 backdrop-blur-sm animate-fade-in"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            
+            {/* Menu */}
+            <div className="relative bg-card border-t border-border shadow-elegant animate-slide-down">
+              <div className="container mx-auto px-4 py-6 space-y-2">
+                {menuItems.map(item => item.isLink ? <a key={item.id} href={`/${item.id}`} className="block w-full text-left py-3 px-4 text-foreground hover:text-primary hover:bg-accent rounded-lg font-medium transition-all">
+                    {item.label}
+                  </a> : <button key={item.id} onClick={() => scrollToSection(item.id)} className="block w-full text-left py-3 px-4 text-foreground hover:text-primary hover:bg-accent rounded-lg font-medium transition-all">
+                    {item.label}
+                  </button>)}
+                <Button variant="hero" onClick={() => scrollToSection("contact")} className="w-full mt-4">
+                  Fale conosco
+                </Button>
+              </div>
+            </div>
           </div>}
       </nav>
     </header>;

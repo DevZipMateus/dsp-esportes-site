@@ -29,6 +29,12 @@ import catalogo18 from "@/assets/catalogo-18.jpg";
 import catalogo19 from "@/assets/catalogo-19.jpg";
 import catalogo20 from "@/assets/catalogo-20.jpg";
 import catalogo21 from "@/assets/catalogo-21.jpg";
+import catalogo22 from "@/assets/catalogo-22.jpg";
+import catalogo23 from "@/assets/catalogo-23.jpg";
+import catalogo24 from "@/assets/catalogo-24.jpg";
+import catalogo25 from "@/assets/catalogo-25.jpg";
+import catalogo26 from "@/assets/catalogo-26.jpg";
+import catalogo27 from "@/assets/catalogo-27.jpg";
 
 const Catalogo = () => {
   return (
@@ -235,6 +241,60 @@ const Catalogo = () => {
                     <img 
                       src={catalogo21} 
                       alt="Catálogo de Equipamentos de Proteção - Página 21" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo22} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 22" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo23} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 23" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo24} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 24" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo25} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 25" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo26} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 26" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo27} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 27" 
                       className="w-full h-auto object-contain"
                     />
                   </div>

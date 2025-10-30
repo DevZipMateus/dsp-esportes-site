@@ -39,6 +39,10 @@ const Header = () => {
     id: "catalogo",
     isLink: true
   }, {
+    label: "Camisetas",
+    id: "camisetas-personalizadas",
+    isLink: true
+  }, {
     label: "Contato",
     id: "contact"
   }];

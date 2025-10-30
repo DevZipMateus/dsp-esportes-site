@@ -11,6 +11,9 @@ import {
 import catalogo1 from "@/assets/catalogo-1.jpg";
 import catalogo2 from "@/assets/catalogo-2.jpg";
 import catalogo3 from "@/assets/catalogo-3.jpg";
+import catalogo4 from "@/assets/catalogo-4.jpg";
+import catalogo5 from "@/assets/catalogo-5.jpg";
+import catalogo6 from "@/assets/catalogo-6.jpg";
 
 const Catalogo = () => {
   return (
@@ -55,6 +58,33 @@ const Catalogo = () => {
                     <img 
                       src={catalogo3} 
                       alt="Catálogo de Equipamentos de Proteção - Página 3" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo4} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 4" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo5} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 5" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo6} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 6" 
                       className="w-full h-auto object-contain"
                     />
                   </div>

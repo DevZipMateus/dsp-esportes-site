@@ -58,7 +58,7 @@ const Catalogo = () => {
               CATÁLOGO
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Equipamentos de Proteção - Conheça nossa linha completa
+              Conheça nossa linha completa
             </p>
           </div>
 

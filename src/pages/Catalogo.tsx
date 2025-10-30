@@ -1,6 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import catalogo1 from "@/assets/catalogo-1.jpg";
 import catalogo2 from "@/assets/catalogo-2.jpg";
 import catalogo3 from "@/assets/catalogo-3.jpg";
@@ -22,30 +29,40 @@ const Catalogo = () => {
             </p>
           </div>
 
-          <div className="space-y-8 max-w-5xl mx-auto animate-slide-up">
-            <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
-              <img 
-                src={catalogo1} 
-                alt="Catálogo de Equipamentos de Proteção - Página 1" 
-                className="w-full h-auto"
-              />
-            </div>
-
-            <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
-              <img 
-                src={catalogo2} 
-                alt="Catálogo de Equipamentos de Proteção - Página 2" 
-                className="w-full h-auto"
-              />
-            </div>
-
-            <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
-              <img 
-                src={catalogo3} 
-                alt="Catálogo de Equipamentos de Proteção - Página 3" 
-                className="w-full h-auto"
-              />
-            </div>
+          <div className="max-w-5xl mx-auto animate-slide-up">
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo1} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 1" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo2} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 2" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="bg-card rounded-lg shadow-elegant overflow-hidden">
+                    <img 
+                      src={catalogo3} 
+                      alt="Catálogo de Equipamentos de Proteção - Página 3" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-4 h-12 w-12" />
+              <CarouselNext className="right-4 h-12 w-12" />
+            </Carousel>
           </div>
 
           <div className="text-center mt-12">

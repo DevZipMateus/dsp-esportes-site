@@ -33,27 +33,27 @@ const Products = () => {
     <section id="products" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 sm:mb-4 px-4">
               Nossos produtos
             </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="w-20 sm:w-24 h-1 bg-primary mx-auto mb-4 sm:mb-6"></div>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
               Equipamentos e acessórios de alta qualidade para atletas de todos os níveis
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 animate-slide-up">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 animate-slide-up px-4">
             {products.map((product, index) => (
               <Card
                 key={index}
                 className="border-none shadow-elegant hover:shadow-red transition-all duration-300 hover:-translate-y-1 bg-background"
               >
                 <CardHeader>
-                  <div className="w-16 h-16 bg-primary-light rounded-lg flex items-center justify-center mb-4">
-                    <product.icon className="w-8 h-8 text-primary" />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary-light rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                    <product.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                   </div>
-                  <CardTitle className="text-2xl text-foreground">{product.title}</CardTitle>
+                  <CardTitle className="text-xl sm:text-2xl text-foreground">{product.title}</CardTitle>
                   <CardDescription className="text-base text-muted-foreground mt-2">
                     {product.description}
                   </CardDescription>

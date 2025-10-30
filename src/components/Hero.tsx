@@ -18,19 +18,19 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold text-primary mb-6 tracking-wider font-bebas">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-primary mb-4 sm:mb-6 tracking-wider font-bebas">
             DSP ESPORTES
           </h1>
-          <h2 className="text-2xl mb-8 font-light text-stone-950 md:text-3xl">
+          <h2 className="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 font-light text-stone-950">
             Mais que produtos, parceiros de treino
           </h2>
-          <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-zinc-950">
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto text-zinc-950 px-4 sm:px-0">
             Uniformes esportivos personalizados e artigos de qualidade há mais de 20 anos. 
             Atendimento especializado para atletas profissionais e amadores.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6">
-              <MessageCircle className="mr-2" />
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
+            <Button variant="hero" size="lg" onClick={scrollToContact} className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
+              <MessageCircle className="mr-2 h-5 w-5" />
               Entre em contato
             </Button>
             <Button variant="outline" size="lg" onClick={() => {
@@ -44,7 +44,7 @@ const Hero = () => {
                 behavior: "smooth"
               });
             }
-          }} className="text-lg px-8 py-6">
+          }} className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
               Ver produtos
             </Button>
           </div>

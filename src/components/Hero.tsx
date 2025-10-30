@@ -13,7 +13,7 @@ const Hero = () => {
       });
     }
   };
-  return <section id="hero" className="relative min-h-screen flex items-center justify-center bg-background pt-20">
+  return <section id="hero" className="relative min-h-screen flex items-center justify-center bg-background pt-24 md:pt-20">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070')] bg-cover bg-center opacity-30"></div>
       
       <div className="container mx-auto px-4 relative z-10">

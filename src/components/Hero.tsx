@@ -56,6 +56,9 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="sr-only">DSP ESPORTES - Uniformes esportivos personalizados</h1>
           <img src={logo} alt="DSP ESPORTES Logo" className="h-48 sm:h-56 md:h-64 lg:h-72 w-auto mx-auto mb-4 sm:mb-6" />
+          <p className="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-2 sm:mb-3">
+            FORNECEDOR AUTORIZADO (ICONE SPORTS)
+          </p>
           <h2 className="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 font-light text-stone-950">
             Mais que produtos, parceiros de treino
           </h2>

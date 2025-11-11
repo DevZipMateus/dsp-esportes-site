@@ -11,6 +11,16 @@ import dsp7 from "@/assets/dsp-7.jpg";
 import dsp8 from "@/assets/dsp-8.jpg";
 import dsp9 from "@/assets/dsp-9.jpg";
 import dsp10 from "@/assets/dsp-10.jpg";
+import dsp11 from "@/assets/dsp-11.jpg";
+import dsp12 from "@/assets/dsp-12.jpg";
+import dsp13 from "@/assets/dsp-13.jpg";
+import dsp14 from "@/assets/dsp-14.jpg";
+import dsp15 from "@/assets/dsp-15.jpg";
+import dsp16 from "@/assets/dsp-16.jpg";
+import dsp17 from "@/assets/dsp-17.jpg";
+import dsp18 from "@/assets/dsp-18.jpg";
+import dsp19 from "@/assets/dsp-19.jpg";
+import dsp20 from "@/assets/dsp-20.jpg";
 
 const CamisasDspPro = () => {
   const camisas = [
@@ -24,6 +34,16 @@ const CamisasDspPro = () => {
     { id: 8, src: dsp8, alt: "Uniforme DSP Pró - Modelo Camuflado Vermelho" },
     { id: 9, src: dsp9, alt: "Uniforme DSP Pró - Modelo Dourado Branco Preto" },
     { id: 10, src: dsp10, alt: "Uniforme DSP Pró - Modelo Preto Dourado" },
+    { id: 11, src: dsp11, alt: "Uniforme DSP Pró - Modelo Verde Escuro Dourado Preto" },
+    { id: 12, src: dsp12, alt: "Uniforme DSP Pró - Modelo Amarelo Vermelho Preto" },
+    { id: 13, src: dsp13, alt: "Uniforme DSP Pró - Modelo Grena Branco" },
+    { id: 14, src: dsp14, alt: "Uniforme DSP Pró - Modelo Amarelo Preto" },
+    { id: 15, src: dsp15, alt: "Uniforme DSP Pró - Modelo Azul Royal Amarelo Branco" },
+    { id: 16, src: dsp16, alt: "Uniforme DSP Pró - Modelo Vermelho Verde Amarelo" },
+    { id: 17, src: dsp17, alt: "Uniforme DSP Pró - Modelo Vermelho Branco" },
+    { id: 18, src: dsp18, alt: "Uniforme DSP Pró - Modelo Vermelho Preto" },
+    { id: 19, src: dsp19, alt: "Uniforme DSP Pró - Modelo Vermelho Branco Preto" },
+    { id: 20, src: dsp20, alt: "Uniforme DSP Pró - Modelo Preto Vermelho Verde" },
   ];
 
   return (

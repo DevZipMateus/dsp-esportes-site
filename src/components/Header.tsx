@@ -69,6 +69,10 @@ const Header = () => {
     id: "camisetas-personalizadas",
     isLink: true
   }, {
+    label: "Camisas DSP Pró",
+    id: "camisas-dsp-pro",
+    isLink: true
+  }, {
     label: "Contato",
     id: "contact"
   }];

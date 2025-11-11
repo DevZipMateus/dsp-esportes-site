@@ -1,7 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
+import heroFutebol1 from "@/assets/hero-futebol-1.jpg";
+import heroFutebol2 from "@/assets/hero-futebol-2.jpg";
+import heroBasquete from "@/assets/hero-basquete.jpg";
+import heroVolei from "@/assets/hero-volei.jpg";
+import heroCorrida from "@/assets/hero-corrida.jpg";
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const heroImages = [
+    heroFutebol1,
+    heroFutebol2,
+    heroBasquete,
+    heroVolei,
+    heroCorrida,
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {
@@ -14,8 +40,17 @@ const Hero = () => {
       });
     }
   };
-  return <section id="hero" className="relative min-h-screen flex items-center justify-center bg-background pt-24 md:pt-20">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070')] bg-cover bg-center opacity-30"></div>
+  return <section id="hero" className="relative min-h-screen flex items-center justify-center bg-background pt-24 md:pt-20 overflow-hidden">
+      {heroImages.map((image, index) => (
+        <div
+          key={index}
+          className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+          style={{
+            backgroundImage: `url(${image})`,
+            opacity: currentImageIndex === index ? 0.3 : 0,
+          }}
+        />
+      ))}
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">

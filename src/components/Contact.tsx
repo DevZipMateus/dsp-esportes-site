@@ -39,7 +39,7 @@ const Contact = () => {
     {
       icon: Facebook,
       name: "dspsports",
-      link: "https://facebook.com/dspsports",
+      link: "https://www.facebook.com/profile.php?id=61558439457663",
     },
   ];
 
